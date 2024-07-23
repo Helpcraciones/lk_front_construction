@@ -1,23 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 ---
 
 <Layout title="LUKIADO">
-  <main class="w-full h-screen grid grid-cols-2 relative">
+  <main class="w-full h-full lg:h-screen flex flex-col lg:grid lg:grid-cols-2 relative">
     <img src="/assets/background.png" alt="background_image" class="w-full h-screen object-cover opacity-10 absolute top-0 left-0 -z-10"/>
     <!-- <div class="">
     <img src="iphonewithhand.png" class="w-screen h-screen object-cover opacity-40 absolute top-0 left-0 -z-10" alt="imagendefondo">
   </div> -->
-    <div>
-      <img src="/assets/iphone.png" alt="celulares" class="left-100000">
+    <div class="w-full h-full flex justify-center items-center">
+      <img src="/assets/iphone.png" alt="celulares" class="w-5/6">
     </div>
-    <div class="w-8/12 place-content-center text-center text-nowrap leading-loose ">
-      <img src="/assets/lukiado_color.png" alt="lukiado" class="object-left-top">
-      <p class="font-bold text-3xl">ESTAMOS EN CONSTRUCCION</p>
-      <p>Algo maravilloso esta por salir a la luz</p>
-      <p>Bienvenido a la mejor plataforma del mundo mundial</p>
-      <p>🎁 ¡Gran inauguración! 🎁</p>
+    <div class="w-full flex flex-col items-center justify-center gap-5 ">
+      <img src="/assets/lukiado_color.png" alt="lukiado" class="w-2/4">
+      <p class="font-bold" style="font-size: clamp(1.25rem, 3vw, 1.875rem);">ESTAMOS EN CONSTRUCCION</p>
+      <div class="text-center" style="font-size: clamp(0.875rem, 2vw, 1rem);">
+        <p>Algo maravilloso esta por salir a la luz</p>
+        <p>Bienvenido a la mejor plataforma del mundo mundial</p>
+        <p>🎁 ¡Gran inauguración! 🎁</p>
+      </div>
       <button class="bg-main-400 text-white">Ver mas proyectos</button>
     </div>
   </main>
@@ -30,4 +31,5 @@ import Card from "../components/Card.astro";
     border-radius: 5px;
     cursor: pointer;
   }
+  
 </style>
